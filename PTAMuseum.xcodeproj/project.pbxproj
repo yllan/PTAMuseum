@@ -45,6 +45,8 @@
 		8507DCBC194AE1BC00939B8D /* PTASite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCBB194AE1BC00939B8D /* PTASite.m */; };
 		8507DCBF194AE1F100939B8D /* PTAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCBE194AE1F100939B8D /* PTAUser.m */; };
 		8507DCC2194AE5BC00939B8D /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCC1194AE5BC00939B8D /* STHTTPRequest.m */; };
+		8507DCC6194B02EB00939B8D /* PTAArticleEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCC5194B02EB00939B8D /* PTAArticleEntity.m */; };
+		8507DCC9194B04A700939B8D /* PTAImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCC8194B04A700939B8D /* PTAImporter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +137,10 @@
 		8507DCBE194AE1F100939B8D /* PTAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAUser.m; sourceTree = "<group>"; };
 		8507DCC0194AE5BC00939B8D /* STHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHTTPRequest.h; sourceTree = "<group>"; };
 		8507DCC1194AE5BC00939B8D /* STHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHTTPRequest.m; sourceTree = "<group>"; };
+		8507DCC4194B02EB00939B8D /* PTAArticleEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAArticleEntity.h; sourceTree = "<group>"; };
+		8507DCC5194B02EB00939B8D /* PTAArticleEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAArticleEntity.m; sourceTree = "<group>"; };
+		8507DCC7194B04A700939B8D /* PTAImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAImporter.h; sourceTree = "<group>"; };
+		8507DCC8194B04A700939B8D /* PTAImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAImporter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +342,10 @@
 				8507DCBE194AE1F100939B8D /* PTAUser.m */,
 				8507DC8A194ADC5400939B8D /* PTAArticle.h */,
 				8507DC8B194ADC5400939B8D /* PTAArticle.m */,
+				8507DCC4194B02EB00939B8D /* PTAArticleEntity.h */,
+				8507DCC5194B02EB00939B8D /* PTAArticleEntity.m */,
+				8507DCC7194B04A700939B8D /* PTAImporter.h */,
+				8507DCC8194B04A700939B8D /* PTAImporter.m */,
 			);
 			name = PTAKit;
 			sourceTree = "<group>";
@@ -476,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8507DCC6194B02EB00939B8D /* PTAArticleEntity.m in Sources */,
 				8507DCBF194AE1F100939B8D /* PTAUser.m in Sources */,
 				8507DCB5194ADEC700939B8D /* utf8.c in Sources */,
 				8507DC8C194ADC5400939B8D /* PTAArticle.m in Sources */,
@@ -488,6 +499,7 @@
 				8507DCAF194ADEC700939B8D /* error.c in Sources */,
 				8507DC91194ADEA500939B8D /* OCGumbo.m in Sources */,
 				8507DCBC194AE1BC00939B8D /* PTASite.m in Sources */,
+				8507DCC9194B04A700939B8D /* PTAImporter.m in Sources */,
 				8507DCAD194ADEC700939B8D /* attribute.c in Sources */,
 				8507DCB1194ADEC700939B8D /* string_buffer.c in Sources */,
 				8507DCAE194ADEC700939B8D /* char_ref.c in Sources */,

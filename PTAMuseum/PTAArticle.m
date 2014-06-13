@@ -22,7 +22,8 @@
         article.innerHTML = articleElement.html();
         article.title = articleElement.Query(@".article-title").first().text();
         article.date = articleElement.Query(@".article-time").first().text();
-        article.category = articleElement.Query(@".article-category").first().text();
+        OCGumboNode *categoryElement = articleElement.Query(@".article-category").first();
+        article.category = categoryElement ? categoryElement.text() : nil;
 
         article.bodyHTML = articleElement.Query(@"div").first().html();
         

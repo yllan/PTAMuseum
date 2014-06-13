@@ -51,7 +51,8 @@
         
         OCGumboDocument *document = [[OCGumboDocument alloc] initWithHTMLString: body];
 
-        NSString *nextURL = document.Query(@"#pagination-next").find(@"a").first().attr(@"href");
+        OCGumboNode *aElement = document.Query(@"#pagination-next").find(@"a").first();
+        NSString *nextURL = aElement ? aElement.attr(@"href") : nil;
 
         NSString *nextPageString = [[nextURL componentsSeparatedByString: @"="] lastObject];
         NSNumber *nextPage = (nextPageString.length > 0) ? @(nextPageString.intValue) : nil;
