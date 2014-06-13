@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
 
 
-@interface PTAArticle : NSManagedObject
+@interface PTAArticle : NSObject
 
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSString * date;

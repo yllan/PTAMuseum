@@ -15,6 +15,6 @@
 - (void) loginWithUsername: (NSString *)username password: (NSString *)password result: (void (^)(NSError *error, PTAUser *user))resultBlock;
 
 
-//- (void) fetchMemberBlogWithPage: (NSNumber *)page result: (void (^)(NSError *error, NSArray *blogs, NSNumber *nextPage))resultBlock;
+- (void) fetchMemberBlogWithPage: (NSNumber *)page result: (void (^)(NSError *error, NSArray *blogs, NSNumber *nextPage))resultBlock;
 
 @end

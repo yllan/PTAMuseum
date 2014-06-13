@@ -12,13 +12,6 @@
 
 @implementation PTAArticle
 
-@dynamic title;
-@dynamic date;
-@dynamic category;
-@dynamic innerHTML;
-@dynamic bodyHTML;
-@dynamic digest;
-
 + (NSArray *) articlesFromHTML: (NSString *)htmlString
 {
     NSMutableArray *resultArray = [NSMutableArray new];
@@ -27,9 +20,10 @@
     for (OCGumboElement *articleElement in document.Query(@"div.article")) {
         PTAArticle *article = [PTAArticle new];
         article.innerHTML = articleElement.html();
-        article.title = articleElement.Query(@"article-title").first().text();
-        article.date = articleElement.Query(@"article-time").first().text();
-        
+        article.title = articleElement.Query(@".article-title").first().text();
+        article.date = articleElement.Query(@".article-time").first().text();
+        article.category = articleElement.Query(@".article-category").first().text();
+
         article.bodyHTML = articleElement.Query(@"div").first().html();
         
         [resultArray addObject: article];
@@ -40,7 +34,7 @@
 
 - (NSString *) description
 {
-    return [NSString stringWithFormat: @"PTAArticle(%@, %@, %@)", self.title, self.date, self.bodyHTML];
+    return [NSString stringWithFormat: @"PTAArticle(%@, %@, %@)", self.title, self.date, self.category];
 }
 
 @end
