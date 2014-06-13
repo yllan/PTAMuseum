@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8507DC32194ACDC800939B8D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8507DC31194ACDC800939B8D /* Cocoa.framework */; };
+		8507DC3C194ACDC800939B8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8507DC3A194ACDC800939B8D /* InfoPlist.strings */; };
+		8507DC3E194ACDC800939B8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC3D194ACDC800939B8D /* main.m */; };
+		8507DC42194ACDC800939B8D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8507DC40194ACDC800939B8D /* Credits.rtf */; };
+		8507DC45194ACDC800939B8D /* PTAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC44194ACDC800939B8D /* PTAAppDelegate.m */; };
+		8507DC48194ACDC800939B8D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8507DC46194ACDC800939B8D /* MainMenu.xib */; };
+		8507DC4B194ACDC800939B8D /* PTAMuseum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC49194ACDC800939B8D /* PTAMuseum.xcdatamodeld */; };
+		8507DC4D194ACDC800939B8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8507DC4C194ACDC800939B8D /* Images.xcassets */; };
+		8507DC54194ACDC800939B8D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8507DC53194ACDC800939B8D /* XCTest.framework */; };
+		8507DC55194ACDC800939B8D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8507DC31194ACDC800939B8D /* Cocoa.framework */; };
+		8507DC5D194ACDC800939B8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8507DC5B194ACDC800939B8D /* InfoPlist.strings */; };
+		8507DC5F194ACDC800939B8D /* PTAMuseumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC5E194ACDC800939B8D /* PTAMuseumTests.m */; };
+		8507DC67194ACDC800939B8D /* PTAMuseumImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 8507DC64194ACDC800939B8D /* PTAMuseumImporter.mdimporter */; };
+		8507DC69194ACDC800939B8D /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8507DC68194ACDC800939B8D /* CoreServices.framework */; };
+		8507DC6B194ACDC800939B8D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8507DC6A194ACDC800939B8D /* CoreFoundation.framework */; };
+		8507DC6D194ACDC800939B8D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8507DC6C194ACDC800939B8D /* CoreData.framework */; };
+		8507DC6F194ACDC800939B8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8507DC6E194ACDC800939B8D /* Foundation.framework */; };
+		8507DC75194ACDC800939B8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8507DC73194ACDC800939B8D /* InfoPlist.strings */; };
+		8507DC77194ACDC800939B8D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC76194ACDC800939B8D /* main.c */; };
+		8507DC79194ACDC800939B8D /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC78194ACDC800939B8D /* GetMetadataForFile.m */; };
+		8507DC7C194ACDC800939B8D /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC7B194ACDC800939B8D /* MySpotlightImporter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8507DC56194ACDC800939B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8507DC26194ACDC800939B8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8507DC2D194ACDC800939B8D;
+			remoteInfo = PTAMuseum;
+		};
+		8507DC65194ACDC800939B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8507DC26194ACDC800939B8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8507DC63194ACDC800939B8D;
+			remoteInfo = PTAMuseumImporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8507DC2E194ACDC800939B8D /* PTAMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTAMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8507DC31194ACDC800939B8D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8507DC34194ACDC800939B8D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8507DC35194ACDC800939B8D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8507DC36194ACDC800939B8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8507DC39194ACDC800939B8D /* PTAMuseum-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTAMuseum-Info.plist"; sourceTree = "<group>"; };
+		8507DC3B194ACDC800939B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8507DC3D194ACDC800939B8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8507DC3F194ACDC800939B8D /* PTAMuseum-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTAMuseum-Prefix.pch"; sourceTree = "<group>"; };
+		8507DC41194ACDC800939B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8507DC43194ACDC800939B8D /* PTAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTAAppDelegate.h; sourceTree = "<group>"; };
+		8507DC44194ACDC800939B8D /* PTAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTAAppDelegate.m; sourceTree = "<group>"; };
+		8507DC47194ACDC800939B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8507DC4A194ACDC800939B8D /* PTAMuseum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PTAMuseum.xcdatamodel; sourceTree = "<group>"; };
+		8507DC4C194ACDC800939B8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8507DC52194ACDC800939B8D /* PTAMuseumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTAMuseumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8507DC53194ACDC800939B8D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8507DC5A194ACDC800939B8D /* PTAMuseumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTAMuseumTests-Info.plist"; sourceTree = "<group>"; };
+		8507DC5C194ACDC800939B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8507DC5E194ACDC800939B8D /* PTAMuseumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTAMuseumTests.m; sourceTree = "<group>"; };
+		8507DC64194ACDC800939B8D /* PTAMuseumImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTAMuseumImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		8507DC68194ACDC800939B8D /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		8507DC6A194ACDC800939B8D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8507DC6C194ACDC800939B8D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8507DC6E194ACDC800939B8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8507DC72194ACDC800939B8D /* PTAMuseumImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTAMuseumImporter-Info.plist"; sourceTree = "<group>"; };
+		8507DC74194ACDC800939B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8507DC76194ACDC800939B8D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		8507DC78194ACDC800939B8D /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		8507DC7A194ACDC800939B8D /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		8507DC7B194ACDC800939B8D /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		8507DC7D194ACDC800939B8D /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		8507DC7E194ACDC800939B8D /* PTAMuseumImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTAMuseumImporter-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8507DC2B194ACDC800939B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8507DC32194ACDC800939B8D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8507DC4F194ACDC800939B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8507DC55194ACDC800939B8D /* Cocoa.framework in Frameworks */,
+				8507DC54194ACDC800939B8D /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8507DC61194ACDC800939B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8507DC6B194ACDC800939B8D /* CoreFoundation.framework in Frameworks */,
+				8507DC6D194ACDC800939B8D /* CoreData.framework in Frameworks */,
+				8507DC69194ACDC800939B8D /* CoreServices.framework in Frameworks */,
+				8507DC6F194ACDC800939B8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8507DC25194ACDC800939B8D = {
+			isa = PBXGroup;
+			children = (
+				8507DC37194ACDC800939B8D /* PTAMuseum */,
+				8507DC58194ACDC800939B8D /* PTAMuseumTests */,
+				8507DC70194ACDC800939B8D /* PTAMuseumImporter */,
+				8507DC30194ACDC800939B8D /* Frameworks */,
+				8507DC2F194ACDC800939B8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8507DC2F194ACDC800939B8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8507DC2E194ACDC800939B8D /* PTAMuseum.app */,
+				8507DC52194ACDC800939B8D /* PTAMuseumTests.xctest */,
+				8507DC64194ACDC800939B8D /* PTAMuseumImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8507DC30194ACDC800939B8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8507DC31194ACDC800939B8D /* Cocoa.framework */,
+				8507DC53194ACDC800939B8D /* XCTest.framework */,
+				8507DC68194ACDC800939B8D /* CoreServices.framework */,
+				8507DC6A194ACDC800939B8D /* CoreFoundation.framework */,
+				8507DC6C194ACDC800939B8D /* CoreData.framework */,
+				8507DC6E194ACDC800939B8D /* Foundation.framework */,
+				8507DC33194ACDC800939B8D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8507DC33194ACDC800939B8D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8507DC34194ACDC800939B8D /* AppKit.framework */,
+				8507DC35194ACDC800939B8D /* CoreData.framework */,
+				8507DC36194ACDC800939B8D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8507DC37194ACDC800939B8D /* PTAMuseum */ = {
+			isa = PBXGroup;
+			children = (
+				8507DC43194ACDC800939B8D /* PTAAppDelegate.h */,
+				8507DC44194ACDC800939B8D /* PTAAppDelegate.m */,
+				8507DC46194ACDC800939B8D /* MainMenu.xib */,
+				8507DC4C194ACDC800939B8D /* Images.xcassets */,
+				8507DC49194ACDC800939B8D /* PTAMuseum.xcdatamodeld */,
+				8507DC38194ACDC800939B8D /* Supporting Files */,
+			);
+			path = PTAMuseum;
+			sourceTree = "<group>";
+		};
+		8507DC38194ACDC800939B8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8507DC39194ACDC800939B8D /* PTAMuseum-Info.plist */,
+				8507DC3A194ACDC800939B8D /* InfoPlist.strings */,
+				8507DC3D194ACDC800939B8D /* main.m */,
+				8507DC3F194ACDC800939B8D /* PTAMuseum-Prefix.pch */,
+				8507DC40194ACDC800939B8D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8507DC58194ACDC800939B8D /* PTAMuseumTests */ = {
+			isa = PBXGroup;
+			children = (
+				8507DC5E194ACDC800939B8D /* PTAMuseumTests.m */,
+				8507DC59194ACDC800939B8D /* Supporting Files */,
+			);
+			path = PTAMuseumTests;
+			sourceTree = "<group>";
+		};
+		8507DC59194ACDC800939B8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8507DC5A194ACDC800939B8D /* PTAMuseumTests-Info.plist */,
+				8507DC5B194ACDC800939B8D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8507DC70194ACDC800939B8D /* PTAMuseumImporter */ = {
+			isa = PBXGroup;
+			children = (
+				8507DC78194ACDC800939B8D /* GetMetadataForFile.m */,
+				8507DC7A194ACDC800939B8D /* MySpotlightImporter.h */,
+				8507DC7B194ACDC800939B8D /* MySpotlightImporter.m */,
+				8507DC7D194ACDC800939B8D /* Importer Read Me.txt */,
+				8507DC71194ACDC800939B8D /* Supporting Files */,
+			);
+			path = PTAMuseumImporter;
+			sourceTree = "<group>";
+		};
+		8507DC71194ACDC800939B8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8507DC72194ACDC800939B8D /* PTAMuseumImporter-Info.plist */,
+				8507DC73194ACDC800939B8D /* InfoPlist.strings */,
+				8507DC76194ACDC800939B8D /* main.c */,
+				8507DC7E194ACDC800939B8D /* PTAMuseumImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8507DC2D194ACDC800939B8D /* PTAMuseum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8507DC84194ACDC800939B8D /* Build configuration list for PBXNativeTarget "PTAMuseum" */;
+			buildPhases = (
+				8507DC2A194ACDC800939B8D /* Sources */,
+				8507DC2B194ACDC800939B8D /* Frameworks */,
+				8507DC2C194ACDC800939B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8507DC66194ACDC800939B8D /* PBXTargetDependency */,
+			);
+			name = PTAMuseum;
+			productName = PTAMuseum;
+			productReference = 8507DC2E194ACDC800939B8D /* PTAMuseum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8507DC51194ACDC800939B8D /* PTAMuseumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8507DC87194ACDC800939B8D /* Build configuration list for PBXNativeTarget "PTAMuseumTests" */;
+			buildPhases = (
+				8507DC4E194ACDC800939B8D /* Sources */,
+				8507DC4F194ACDC800939B8D /* Frameworks */,
+				8507DC50194ACDC800939B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8507DC57194ACDC800939B8D /* PBXTargetDependency */,
+			);
+			name = PTAMuseumTests;
+			productName = PTAMuseumTests;
+			productReference = 8507DC52194ACDC800939B8D /* PTAMuseumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8507DC63194ACDC800939B8D /* PTAMuseumImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8507DC81194ACDC800939B8D /* Build configuration list for PBXNativeTarget "PTAMuseumImporter" */;
+			buildPhases = (
+				8507DC60194ACDC800939B8D /* Sources */,
+				8507DC61194ACDC800939B8D /* Frameworks */,
+				8507DC62194ACDC800939B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PTAMuseumImporter;
+			productName = PTAMuseumImporter;
+			productReference = 8507DC64194ACDC800939B8D /* PTAMuseumImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8507DC26194ACDC800939B8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PTA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Yung-Luen Lan";
+				TargetAttributes = {
+					8507DC51194ACDC800939B8D = {
+						TestTargetID = 8507DC2D194ACDC800939B8D;
+					};
+				};
+			};
+			buildConfigurationList = 8507DC29194ACDC800939B8D /* Build configuration list for PBXProject "PTAMuseum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8507DC25194ACDC800939B8D;
+			productRefGroup = 8507DC2F194ACDC800939B8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8507DC2D194ACDC800939B8D /* PTAMuseum */,
+				8507DC51194ACDC800939B8D /* PTAMuseumTests */,
+				8507DC63194ACDC800939B8D /* PTAMuseumImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8507DC2C194ACDC800939B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8507DC3C194ACDC800939B8D /* InfoPlist.strings in Resources */,
+				8507DC67194ACDC800939B8D /* PTAMuseumImporter.mdimporter in Resources */,
+				8507DC4D194ACDC800939B8D /* Images.xcassets in Resources */,
+				8507DC42194ACDC800939B8D /* Credits.rtf in Resources */,
+				8507DC48194ACDC800939B8D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8507DC50194ACDC800939B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8507DC5D194ACDC800939B8D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8507DC62194ACDC800939B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8507DC75194ACDC800939B8D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8507DC2A194ACDC800939B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8507DC45194ACDC800939B8D /* PTAAppDelegate.m in Sources */,
+				8507DC4B194ACDC800939B8D /* PTAMuseum.xcdatamodeld in Sources */,
+				8507DC3E194ACDC800939B8D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8507DC4E194ACDC800939B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8507DC5F194ACDC800939B8D /* PTAMuseumTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8507DC60194ACDC800939B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8507DC7C194ACDC800939B8D /* MySpotlightImporter.m in Sources */,
+				8507DC77194ACDC800939B8D /* main.c in Sources */,
+				8507DC79194ACDC800939B8D /* GetMetadataForFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8507DC57194ACDC800939B8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8507DC2D194ACDC800939B8D /* PTAMuseum */;
+			targetProxy = 8507DC56194ACDC800939B8D /* PBXContainerItemProxy */;
+		};
+		8507DC66194ACDC800939B8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8507DC63194ACDC800939B8D /* PTAMuseumImporter */;
+			targetProxy = 8507DC65194ACDC800939B8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8507DC3A194ACDC800939B8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8507DC3B194ACDC800939B8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8507DC40194ACDC800939B8D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8507DC41194ACDC800939B8D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8507DC46194ACDC800939B8D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8507DC47194ACDC800939B8D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		8507DC5B194ACDC800939B8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8507DC5C194ACDC800939B8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8507DC73194ACDC800939B8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8507DC74194ACDC800939B8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8507DC7F194ACDC800939B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8507DC80194ACDC800939B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8507DC82194ACDC800939B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTAMuseumImporter/PTAMuseumImporter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PTAMuseumImporter/PTAMuseumImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		8507DC83194ACDC800939B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTAMuseumImporter/PTAMuseumImporter-Prefix.pch";
+				INFOPLIST_FILE = "PTAMuseumImporter/PTAMuseumImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		8507DC85194ACDC800939B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTAMuseum/PTAMuseum-Prefix.pch";
+				INFOPLIST_FILE = "PTAMuseum/PTAMuseum-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8507DC86194ACDC800939B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTAMuseum/PTAMuseum-Prefix.pch";
+				INFOPLIST_FILE = "PTAMuseum/PTAMuseum-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8507DC88194ACDC800939B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PTAMuseum.app/Contents/MacOS/PTAMuseum";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTAMuseum/PTAMuseum-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PTAMuseumTests/PTAMuseumTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8507DC89194ACDC800939B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PTAMuseum.app/Contents/MacOS/PTAMuseum";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTAMuseum/PTAMuseum-Prefix.pch";
+				INFOPLIST_FILE = "PTAMuseumTests/PTAMuseumTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8507DC29194ACDC800939B8D /* Build configuration list for PBXProject "PTAMuseum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8507DC7F194ACDC800939B8D /* Debug */,
+				8507DC80194ACDC800939B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8507DC81194ACDC800939B8D /* Build configuration list for PBXNativeTarget "PTAMuseumImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8507DC82194ACDC800939B8D /* Debug */,
+				8507DC83194ACDC800939B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8507DC84194ACDC800939B8D /* Build configuration list for PBXNativeTarget "PTAMuseum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8507DC85194ACDC800939B8D /* Debug */,
+				8507DC86194ACDC800939B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8507DC87194ACDC800939B8D /* Build configuration list for PBXNativeTarget "PTAMuseumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8507DC88194ACDC800939B8D /* Debug */,
+				8507DC89194ACDC800939B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8507DC49194ACDC800939B8D /* PTAMuseum.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8507DC4A194ACDC800939B8D /* PTAMuseum.xcdatamodel */,
+			);
+			currentVersion = 8507DC4A194ACDC800939B8D /* PTAMuseum.xcdatamodel */;
+			path = PTAMuseum.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8507DC26194ACDC800939B8D /* Project object */;
+}
