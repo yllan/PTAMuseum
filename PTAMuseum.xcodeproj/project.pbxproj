@@ -47,6 +47,7 @@
 		8507DCC2194AE5BC00939B8D /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCC1194AE5BC00939B8D /* STHTTPRequest.m */; };
 		8507DCC6194B02EB00939B8D /* PTAArticleEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCC5194B02EB00939B8D /* PTAArticleEntity.m */; };
 		8507DCC9194B04A700939B8D /* PTAImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCC8194B04A700939B8D /* PTAImporter.m */; };
+		85FFA123194B2E37000FF3FA /* NSString+RegexAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FFA122194B2E37000FF3FA /* NSString+RegexAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,8 @@
 		8507DCC5194B02EB00939B8D /* PTAArticleEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAArticleEntity.m; sourceTree = "<group>"; };
 		8507DCC7194B04A700939B8D /* PTAImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAImporter.h; sourceTree = "<group>"; };
 		8507DCC8194B04A700939B8D /* PTAImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAImporter.m; sourceTree = "<group>"; };
+		85FFA121194B2E37000FF3FA /* NSString+RegexAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexAddition.h"; sourceTree = "<group>"; };
+		85FFA122194B2E37000FF3FA /* NSString+RegexAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +339,8 @@
 		8507DCB9194AE1A100939B8D /* PTAKit */ = {
 			isa = PBXGroup;
 			children = (
+				85FFA121194B2E37000FF3FA /* NSString+RegexAddition.h */,
+				85FFA122194B2E37000FF3FA /* NSString+RegexAddition.m */,
 				8507DCBA194AE1BC00939B8D /* PTASite.h */,
 				8507DCBB194AE1BC00939B8D /* PTASite.m */,
 				8507DCBD194AE1F100939B8D /* PTAUser.h */,
@@ -487,6 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8507DCC6194B02EB00939B8D /* PTAArticleEntity.m in Sources */,
+				85FFA123194B2E37000FF3FA /* NSString+RegexAddition.m in Sources */,
 				8507DCBF194AE1F100939B8D /* PTAUser.m in Sources */,
 				8507DCB5194ADEC700939B8D /* utf8.c in Sources */,
 				8507DC8C194ADC5400939B8D /* PTAArticle.m in Sources */,

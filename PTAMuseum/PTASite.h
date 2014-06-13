@@ -17,4 +17,6 @@
 
 - (void) fetchMemberBlogWithPage: (NSNumber *)page result: (void (^)(NSError *error, NSArray *blogs, NSNumber *nextPage))resultBlock;
 
+- (void) fetchMemberBlogArchiveWithPage:(NSNumber *)page result:(void (^)(NSError *, NSArray *, NSNumber *))resultBlock;
+
 @end

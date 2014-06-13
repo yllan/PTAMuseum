@@ -26,7 +26,7 @@
 - (void) importBlogAtPage: (NSNumber *)page
 {
     void (^handler)(NSError *, NSArray *, NSNumber *) = ^(NSError *error, NSArray *blogs, NSNumber *nextPage) {
-        NSLog(@"%@", nextPage);
+        NSLog(@"%@", page);
         for (PTAArticle *blog in blogs) {
             NSLog(@"%@", blog);
         }
@@ -39,6 +39,23 @@
     [self.site fetchMemberBlogWithPage: page result: handler];
 }
 
+- (void) importBlogArchiveAtPage: (NSNumber *)page
+{
+    void (^handler)(NSError *, NSArray *, NSNumber *) = ^(NSError *error, NSArray *blogs, NSNumber *nextPage) {
+        NSLog(@"%@", page);
+        for (PTAArticle *blog in blogs) {
+            NSLog(@"%@", blog);
+        }
+        if (nextPage) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self importBlogArchiveAtPage: nextPage];
+            });
+        }
+    };
+    [self.site fetchMemberBlogArchiveWithPage: page result: handler];
+}
+
+
 - (void) importWithUsername: (NSString *)name password: (NSString *)password
 {
     [self.site loginWithUsername: name password: password result: ^(NSError *error, PTAUser *user) {
@@ -46,7 +63,7 @@
             return;
         }
         
-        [self importBlogAtPage: @1];
+        [self importBlogArchiveAtPage: @1];
     }];
 }
 

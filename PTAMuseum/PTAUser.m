@@ -9,25 +9,7 @@
 #import "PTAUser.h"
 #import "OCGumbo.h"
 #import "OCGumbo+Query.h"
-
-@interface NSString (RegexAdditions)
-- (NSString *) firstSubstringMatchesPattern: (NSString *)pattern;
-@end
-
-@implementation NSString (RegexAdditions)
-
-- (NSString *) firstSubstringMatchesPattern: (NSString *)pattern
-{
-    NSError *error = nil;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern: pattern options: 0 error: &error];
-    if (regex == nil) return nil;
-    
-    NSTextCheckingResult *result = [regex firstMatchInString: self options: 0 range: NSMakeRange(0, self.length)];
-    if (!result) return nil;
-    return [self substringWithRange: result.range];
-}
-
-@end
+#import "NSString+RegexAddition.h"
 
 @implementation PTAUser
 + (PTAUser *) userFromHTML: (NSString *)htmlString

@@ -9,6 +9,7 @@
 #import "PTAArticle.h"
 #import "OCGumbo.h"
 #import "OCGumbo+Query.h"
+#import "NSString+RegexAddition.h"
 
 @implementation PTAArticle
 
@@ -20,16 +21,38 @@
     for (OCGumboElement *articleElement in document.Query(@"div.article")) {
         PTAArticle *article = [PTAArticle new];
         article.innerHTML = articleElement.html();
-        article.title = articleElement.Query(@".article-title").first().text();
-        article.date = articleElement.Query(@".article-time").first().text();
-        OCGumboNode *categoryElement = articleElement.Query(@".article-category").first();
-        article.category = categoryElement ? categoryElement.text() : nil;
 
-        article.bodyHTML = articleElement.Query(@"div").first().html();
+#define GetText(e) (e ? e.text() : nil)
+#define GetHtml(e) (e ? e.html() : nil)
         
+        article.title = GetText(articleElement.Query(@".article-title").first());
+        article.date = GetText(articleElement.Query(@".article-time").first());
+        
+        article.category = GetText(articleElement.Query(@".article-category").first());
+        article.bodyHTML = GetHtml(articleElement.Query(@"div").first());
+        if (article.title == nil && article.date == nil) continue;
         [resultArray addObject: article];
     }
     
+    
+    for (OCGumboElement *articleElement in document.Query(@"div.day")) {
+        PTAArticle *article = [PTAArticle new];
+        article.innerHTML = articleElement.html();
+        NSString *category = nil;
+        if ([articleElement.attr(@"class") rangeOfString: @"member-47"].location != NSNotFound) {
+            category = @"のっち";
+        } else if ([articleElement.attr(@"class") rangeOfString: @"member-46"].location != NSNotFound) {
+            category = @"かしゆか";
+        } else if ([articleElement.attr(@"class") rangeOfString: @"member-45"].location != NSNotFound) {
+            category = @"あ～ちゃん";
+        }
+        
+        article.title = GetText(articleElement.Query(@"h3").first());
+        article.date = [GetText(articleElement.Query(@"h4").first()) firstSubstringMatchesPattern: @"\\d+\\.\\d+\\.\\d+"];
+        article.category = category;
+        article.bodyHTML = GetHtml(articleElement.Query(@"div.itembody").first());
+        [resultArray addObject: article];
+    }
     return resultArray;
 }
 

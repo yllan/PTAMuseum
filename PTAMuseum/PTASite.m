@@ -50,9 +50,8 @@
         NSArray *blogs = [PTAArticle articlesFromHTML: body];
         
         OCGumboDocument *document = [[OCGumboDocument alloc] initWithHTMLString: body];
-
-        OCGumboNode *aElement = document.Query(@"#pagination-next").find(@"a").first();
-        NSString *nextURL = aElement ? aElement.attr(@"href") : nil;
+#define GetAttr(e, a) (e ? e.attr(a) : nil)
+        NSString *nextURL = GetAttr(document.Query(@"#pagination-next").find(@"a").first(), @"href");
 
         NSString *nextPageString = [[nextURL componentsSeparatedByString: @"="] lastObject];
         NSNumber *nextPage = (nextPageString.length > 0) ? @(nextPageString.intValue) : nil;
@@ -60,5 +59,23 @@
     };
     [req startAsynchronous];
 }
+
+- (void) fetchMemberBlogArchiveWithPage:(NSNumber *)page result:(void (^)(NSError *, NSArray *, NSNumber *))resultBlock
+{
+    STHTTPRequest *req = [STHTTPRequest requestWithURLString: [NSString stringWithFormat: @"http://archive.perfume-web.jp/pta/blog/index.php?blogid=19&page=%@", page ?: @1]];
+    req.completionBlock = ^(NSDictionary *header, NSString *body) {
+        NSArray *blogs = [PTAArticle articlesFromHTML: body];
+        
+        OCGumboDocument *document = [[OCGumboDocument alloc] initWithHTMLString: body];
+        NSString *nextURL = GetAttr(document.Query(@".npsb_nextlink").parent(@"a").first(), @"href");
+        
+        NSString *nextPageString = [[nextURL componentsSeparatedByString: @"="] lastObject];
+        NSNumber *nextPage = (nextPageString.length > 0) ? @(nextPageString.intValue) : nil;
+        resultBlock(nil, blogs, nextPage);
+    };
+    [req startAsynchronous];
+}
+
+
 
 @end
