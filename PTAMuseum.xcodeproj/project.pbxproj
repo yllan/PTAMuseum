@@ -28,6 +28,23 @@
 		8507DC77194ACDC800939B8D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC76194ACDC800939B8D /* main.c */; };
 		8507DC79194ACDC800939B8D /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC78194ACDC800939B8D /* GetMetadataForFile.m */; };
 		8507DC7C194ACDC800939B8D /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC7B194ACDC800939B8D /* MySpotlightImporter.m */; };
+		8507DC8C194ADC5400939B8D /* PTAArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC8B194ADC5400939B8D /* PTAArticle.m */; };
+		8507DC91194ADEA500939B8D /* OCGumbo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC8E194ADEA500939B8D /* OCGumbo.m */; };
+		8507DC92194ADEA500939B8D /* OCGumbo+Query.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC90194ADEA500939B8D /* OCGumbo+Query.m */; };
+		8507DCAD194ADEC700939B8D /* attribute.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC94194ADEC700939B8D /* attribute.c */; };
+		8507DCAE194ADEC700939B8D /* char_ref.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC96194ADEC700939B8D /* char_ref.c */; };
+		8507DCAF194ADEC700939B8D /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC98194ADEC700939B8D /* error.c */; };
+		8507DCB0194ADEC700939B8D /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC9C194ADEC700939B8D /* parser.c */; };
+		8507DCB1194ADEC700939B8D /* string_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DC9E194ADEC700939B8D /* string_buffer.c */; };
+		8507DCB2194ADEC700939B8D /* string_piece.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCA0194ADEC700939B8D /* string_piece.c */; };
+		8507DCB3194ADEC700939B8D /* tag.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCA2194ADEC700939B8D /* tag.c */; };
+		8507DCB4194ADEC700939B8D /* tokenizer.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCA5194ADEC700939B8D /* tokenizer.c */; };
+		8507DCB5194ADEC700939B8D /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCA7194ADEC700939B8D /* utf8.c */; };
+		8507DCB6194ADEC700939B8D /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCA9194ADEC700939B8D /* util.c */; };
+		8507DCB7194ADEC700939B8D /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCAB194ADEC700939B8D /* vector.c */; };
+		8507DCBC194AE1BC00939B8D /* PTASite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCBB194AE1BC00939B8D /* PTASite.m */; };
+		8507DCBF194AE1F100939B8D /* PTAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCBE194AE1F100939B8D /* PTAUser.m */; };
+		8507DCC2194AE5BC00939B8D /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DCC1194AE5BC00939B8D /* STHTTPRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +98,43 @@
 		8507DC7B194ACDC800939B8D /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
 		8507DC7D194ACDC800939B8D /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
 		8507DC7E194ACDC800939B8D /* PTAMuseumImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTAMuseumImporter-Prefix.pch"; sourceTree = "<group>"; };
+		8507DC8A194ADC5400939B8D /* PTAArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAArticle.h; sourceTree = "<group>"; };
+		8507DC8B194ADC5400939B8D /* PTAArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAArticle.m; sourceTree = "<group>"; };
+		8507DC8D194ADEA500939B8D /* OCGumbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCGumbo.h; path = PTAMuseum/OCGumbo/OCGumbo/OCGumbo.h; sourceTree = "<group>"; };
+		8507DC8E194ADEA500939B8D /* OCGumbo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCGumbo.m; path = PTAMuseum/OCGumbo/OCGumbo/OCGumbo.m; sourceTree = "<group>"; };
+		8507DC8F194ADEA500939B8D /* OCGumbo+Query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OCGumbo+Query.h"; path = "PTAMuseum/OCGumbo/OCGumbo/OCGumbo+Query.h"; sourceTree = "<group>"; };
+		8507DC90194ADEA500939B8D /* OCGumbo+Query.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "OCGumbo+Query.m"; path = "PTAMuseum/OCGumbo/OCGumbo/OCGumbo+Query.m"; sourceTree = "<group>"; };
+		8507DC94194ADEC700939B8D /* attribute.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = attribute.c; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/attribute.c; sourceTree = "<group>"; };
+		8507DC95194ADEC700939B8D /* attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = attribute.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/attribute.h; sourceTree = "<group>"; };
+		8507DC96194ADEC700939B8D /* char_ref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = char_ref.c; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/char_ref.c; sourceTree = "<group>"; };
+		8507DC97194ADEC700939B8D /* char_ref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = char_ref.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/char_ref.h; sourceTree = "<group>"; };
+		8507DC98194ADEC700939B8D /* error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = error.c; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/error.c; sourceTree = "<group>"; };
+		8507DC99194ADEC700939B8D /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = error.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/error.h; sourceTree = "<group>"; };
+		8507DC9A194ADEC700939B8D /* gumbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gumbo.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/gumbo.h; sourceTree = "<group>"; };
+		8507DC9B194ADEC700939B8D /* insertion_mode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = insertion_mode.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/insertion_mode.h; sourceTree = "<group>"; };
+		8507DC9C194ADEC700939B8D /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parser.c; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/parser.c; sourceTree = "<group>"; };
+		8507DC9D194ADEC700939B8D /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parser.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/parser.h; sourceTree = "<group>"; };
+		8507DC9E194ADEC700939B8D /* string_buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = string_buffer.c; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/string_buffer.c; sourceTree = "<group>"; };
+		8507DC9F194ADEC700939B8D /* string_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string_buffer.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/string_buffer.h; sourceTree = "<group>"; };
+		8507DCA0194ADEC700939B8D /* string_piece.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = string_piece.c; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/string_piece.c; sourceTree = "<group>"; };
+		8507DCA1194ADEC700939B8D /* string_piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string_piece.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/string_piece.h; sourceTree = "<group>"; };
+		8507DCA2194ADEC700939B8D /* tag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tag.c; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/tag.c; sourceTree = "<group>"; };
+		8507DCA3194ADEC700939B8D /* token_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = token_type.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/token_type.h; sourceTree = "<group>"; };
+		8507DCA4194ADEC700939B8D /* tokenizer_states.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tokenizer_states.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/tokenizer_states.h; sourceTree = "<group>"; };
+		8507DCA5194ADEC700939B8D /* tokenizer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tokenizer.c; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/tokenizer.c; sourceTree = "<group>"; };
+		8507DCA6194ADEC700939B8D /* tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tokenizer.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/tokenizer.h; sourceTree = "<group>"; };
+		8507DCA7194ADEC700939B8D /* utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utf8.c; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/utf8.c; sourceTree = "<group>"; };
+		8507DCA8194ADEC700939B8D /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utf8.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/utf8.h; sourceTree = "<group>"; };
+		8507DCA9194ADEC700939B8D /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util.c; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/util.c; sourceTree = "<group>"; };
+		8507DCAA194ADEC700939B8D /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/util.h; sourceTree = "<group>"; };
+		8507DCAB194ADEC700939B8D /* vector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vector.c; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/vector.c; sourceTree = "<group>"; };
+		8507DCAC194ADEC700939B8D /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vector.h; path = PTAMuseum/OCGumbo/OCGumbo/gumbo/src/vector.h; sourceTree = "<group>"; };
+		8507DCBA194AE1BC00939B8D /* PTASite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTASite.h; sourceTree = "<group>"; };
+		8507DCBB194AE1BC00939B8D /* PTASite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTASite.m; sourceTree = "<group>"; };
+		8507DCBD194AE1F100939B8D /* PTAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAUser.h; sourceTree = "<group>"; };
+		8507DCBE194AE1F100939B8D /* PTAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAUser.m; sourceTree = "<group>"; };
+		8507DCC0194AE5BC00939B8D /* STHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHTTPRequest.h; sourceTree = "<group>"; };
+		8507DCC1194AE5BC00939B8D /* STHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHTTPRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +172,8 @@
 		8507DC25194ACDC800939B8D = {
 			isa = PBXGroup;
 			children = (
+				8507DCC3194AE5C000939B8D /* STHTTPRequest */,
+				8507DC93194ADEB500939B8D /* OCGumbo */,
 				8507DC37194ACDC800939B8D /* PTAMuseum */,
 				8507DC58194ACDC800939B8D /* PTAMuseumTests */,
 				8507DC70194ACDC800939B8D /* PTAMuseumImporter */,
@@ -163,6 +219,7 @@
 		8507DC37194ACDC800939B8D /* PTAMuseum */ = {
 			isa = PBXGroup;
 			children = (
+				8507DCB9194AE1A100939B8D /* PTAKit */,
 				8507DC43194ACDC800939B8D /* PTAAppDelegate.h */,
 				8507DC44194ACDC800939B8D /* PTAAppDelegate.m */,
 				8507DC46194ACDC800939B8D /* MainMenu.xib */,
@@ -224,6 +281,72 @@
 				8507DC7E194ACDC800939B8D /* PTAMuseumImporter-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8507DC93194ADEB500939B8D /* OCGumbo */ = {
+			isa = PBXGroup;
+			children = (
+				8507DCB8194ADECF00939B8D /* gumbo */,
+				8507DC8D194ADEA500939B8D /* OCGumbo.h */,
+				8507DC8E194ADEA500939B8D /* OCGumbo.m */,
+				8507DC8F194ADEA500939B8D /* OCGumbo+Query.h */,
+				8507DC90194ADEA500939B8D /* OCGumbo+Query.m */,
+			);
+			name = OCGumbo;
+			sourceTree = "<group>";
+		};
+		8507DCB8194ADECF00939B8D /* gumbo */ = {
+			isa = PBXGroup;
+			children = (
+				8507DC94194ADEC700939B8D /* attribute.c */,
+				8507DC95194ADEC700939B8D /* attribute.h */,
+				8507DC96194ADEC700939B8D /* char_ref.c */,
+				8507DC97194ADEC700939B8D /* char_ref.h */,
+				8507DC98194ADEC700939B8D /* error.c */,
+				8507DC99194ADEC700939B8D /* error.h */,
+				8507DC9A194ADEC700939B8D /* gumbo.h */,
+				8507DC9B194ADEC700939B8D /* insertion_mode.h */,
+				8507DC9C194ADEC700939B8D /* parser.c */,
+				8507DC9D194ADEC700939B8D /* parser.h */,
+				8507DC9E194ADEC700939B8D /* string_buffer.c */,
+				8507DC9F194ADEC700939B8D /* string_buffer.h */,
+				8507DCA0194ADEC700939B8D /* string_piece.c */,
+				8507DCA1194ADEC700939B8D /* string_piece.h */,
+				8507DCA2194ADEC700939B8D /* tag.c */,
+				8507DCA3194ADEC700939B8D /* token_type.h */,
+				8507DCA4194ADEC700939B8D /* tokenizer_states.h */,
+				8507DCA5194ADEC700939B8D /* tokenizer.c */,
+				8507DCA6194ADEC700939B8D /* tokenizer.h */,
+				8507DCA7194ADEC700939B8D /* utf8.c */,
+				8507DCA8194ADEC700939B8D /* utf8.h */,
+				8507DCA9194ADEC700939B8D /* util.c */,
+				8507DCAA194ADEC700939B8D /* util.h */,
+				8507DCAB194ADEC700939B8D /* vector.c */,
+				8507DCAC194ADEC700939B8D /* vector.h */,
+			);
+			name = gumbo;
+			sourceTree = "<group>";
+		};
+		8507DCB9194AE1A100939B8D /* PTAKit */ = {
+			isa = PBXGroup;
+			children = (
+				8507DCBA194AE1BC00939B8D /* PTASite.h */,
+				8507DCBB194AE1BC00939B8D /* PTASite.m */,
+				8507DCBD194AE1F100939B8D /* PTAUser.h */,
+				8507DCBE194AE1F100939B8D /* PTAUser.m */,
+				8507DC8A194ADC5400939B8D /* PTAArticle.h */,
+				8507DC8B194ADC5400939B8D /* PTAArticle.m */,
+			);
+			name = PTAKit;
+			sourceTree = "<group>";
+		};
+		8507DCC3194AE5C000939B8D /* STHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				8507DCC0194AE5BC00939B8D /* STHTTPRequest.h */,
+				8507DCC1194AE5BC00939B8D /* STHTTPRequest.m */,
+			);
+			name = STHTTPRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,8 +476,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8507DCBF194AE1F100939B8D /* PTAUser.m in Sources */,
+				8507DCB5194ADEC700939B8D /* utf8.c in Sources */,
+				8507DC8C194ADC5400939B8D /* PTAArticle.m in Sources */,
+				8507DC92194ADEA500939B8D /* OCGumbo+Query.m in Sources */,
+				8507DCB7194ADEC700939B8D /* vector.c in Sources */,
 				8507DC45194ACDC800939B8D /* PTAAppDelegate.m in Sources */,
+				8507DCB4194ADEC700939B8D /* tokenizer.c in Sources */,
+				8507DCB6194ADEC700939B8D /* util.c in Sources */,
+				8507DCB2194ADEC700939B8D /* string_piece.c in Sources */,
+				8507DCAF194ADEC700939B8D /* error.c in Sources */,
+				8507DC91194ADEA500939B8D /* OCGumbo.m in Sources */,
+				8507DCBC194AE1BC00939B8D /* PTASite.m in Sources */,
+				8507DCAD194ADEC700939B8D /* attribute.c in Sources */,
+				8507DCB1194ADEC700939B8D /* string_buffer.c in Sources */,
+				8507DCAE194ADEC700939B8D /* char_ref.c in Sources */,
 				8507DC4B194ACDC800939B8D /* PTAMuseum.xcdatamodeld in Sources */,
+				8507DCB3194ADEC700939B8D /* tag.c in Sources */,
+				8507DCB0194ADEC700939B8D /* parser.c in Sources */,
+				8507DCC2194AE5BC00939B8D /* STHTTPRequest.m in Sources */,
 				8507DC3E194ACDC800939B8D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,6 +767,7 @@
 				8507DC83194ACDC800939B8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8507DC84194ACDC800939B8D /* Build configuration list for PBXNativeTarget "PTAMuseum" */ = {
 			isa = XCConfigurationList;
@@ -635,6 +776,7 @@
 				8507DC86194ACDC800939B8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8507DC87194ACDC800939B8D /* Build configuration list for PBXNativeTarget "PTAMuseumTests" */ = {
 			isa = XCConfigurationList;
@@ -643,6 +785,7 @@
 				8507DC89194ACDC800939B8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
